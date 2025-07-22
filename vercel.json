@@ -4,12 +4,6 @@
       "runtime": "deno@1.37.0"
     }
   },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
@@ -29,16 +23,6 @@
         {
           "key": "X-Powered-By",
           "value": "Deno-Enhanced-Bot-Protection"
-        }
-        {
-  "version": 2,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=1, stale-while-revalidate"
         }
       ]
     }
