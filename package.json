@@ -1,0 +1,32 @@
+{
+  "name": "enhanced-bot-protection-api",
+  "version": "2.0.0",
+  "description": "Advanced AI detection and bot protection API for Vercel",
+  "main": "api/index.ts",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "bot-protection",
+    "ai-detection",
+    "vercel",
+    "security",
+    "threat-intelligence",
+    "deno",
+    "serverless"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "vercel": {
+    "functions": {
+      "api/**.ts": {
+        "runtime": "deno@1.37.0"
+      }
+    }
+  }
+}
+
